@@ -18,7 +18,8 @@ public class Country {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer id;         // data base ke colomn wala nam thami methana pennane
+    
     private String code;
     private String capital;
     private String description;

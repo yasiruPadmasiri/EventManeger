@@ -423,11 +423,12 @@
                                 <div class="btn-group">
                                     <a class="btn btn-success" th:href="@{/countries/findById/(id=${country.id})}">Update</a>
                                     <a class="btn btn-danger" th:href="@{/countries/delete/(id=${country.id})}">Delete</a>
-                                    <button type="button" class="btn btn-primary" id="editButton">Edit/button>
+                                    <button type="button" class="btn btn-primary" id="editButton">Edit</button>
+                                    <a class="btn btn-dark" onclick=" myFunc() ">Updated</a>
 
                                 </div>
 
-                                <!-- <form th:action="" method="POST">
+                                <!-- <form th:action=" " method="POST ">
                                     <button type="submit " class="btn btn-success ">Edit Country</button>
 
 
@@ -446,30 +447,30 @@
 
 
                         </div>
-                        <div style="margin-left: 150px;margin-right: 150px;margin-top: 50px;">
-                            <div style="margin-bottom: 50px;">
-                                <button class="btn btn-primary"> ADD NEW COUNTRY TO THE SYSTEM</button>
+                        <div style="margin-left: 150px;margin-right: 150px;margin-top: 50px; ">
+                            <div style="margin-bottom: 50px; ">
+                                <button class="btn btn-primary "> ADD NEW COUNTRY TO THE SYSTEM</button>
                             </div>
-                            <form th:action="@{/countries/addNew}" method="POST">
+                            <form th:action="@{/countries/addNew} " method="POST ">
                                 <div class="mb-3 form-group ">
                                     <label for="recipient-name " class="col-form-label ">Description:</label>
-                                    <input class="form-control " id="recipient-name " name="description">
+                                    <input class="form-control " id="recipient-name " name="description ">
                                 </div>
                                 <div class="mb-3 form-group ">
                                     <label for="recipient-name " class="col-form-label ">capital:</label>
-                                    <input class="form-control " id="recipient-name " name="capital">
+                                    <input class="form-control " id="recipient-name " name="capital ">
                                 </div>
                                 <div class="mb-3 form-group ">
                                     <label for="recipient-name " class="col-form-label ">Code:</label>
-                                    <input class="form-control " id="recipient-name " name="code">
+                                    <input class="form-control " id="recipient-name " name="code ">
                                 </div>
                                 <div class="mb-3 form-group ">
                                     <label for="recipient-name " class="col-form-label ">Continent:</label>
-                                    <input class="form-control " id="recipient-name " name="continent">
+                                    <input class="form-control " id="recipient-name " name="continent ">
                                 </div>
                                 <div class="mb-3 form-group ">
                                     <label for="recipient-name " class="col-form-label ">Nationality:</label>
-                                    <input class="form-control " id="recipient-name " name="nationality">
+                                    <input class="form-control " id="recipient-name " name="nationality ">
                                 </div>
 
                                 <button type="submit " class="btn btn-success ">Add new Country</button>
@@ -492,30 +493,30 @@
 
 
                         </div>
-                        <div style="margin-left: 150px;margin-right: 150px;margin-top: 50px;">
-                            <div style="margin-bottom: 50px;">
-                                <button class="btn btn-primary"> UPDATE COUNTRY TO THE SYSTEM</button>
+                        <div style="margin-left: 150px;margin-right: 150px;margin-top: 50px; ">
+                            <div style="margin-bottom: 50px; ">
+                                <button class="btn btn-primary "> UPDATE COUNTRY TO THE SYSTEM</button>
                             </div>
-                            <form th:action="@{/countries/update}" method="PUT">
+                            <form th:action="@{/countries/update} " method="PUT ">
                                 <div class="mb-3 form-group ">
                                     <label for="recipient-name " class="col-form-label ">Description:</label>
-                                    <input class="form-control " id="recipient-name " name="description" th:text="@{countrie.id}">
+                                    <input class="form-control " id="descriptionEdit" name="description " th:text="@{countrie.id} ">
                                 </div>
                                 <div class="mb-3 form-group ">
                                     <label for="recipient-name " class="col-form-label ">capital:</label>
-                                    <input class="form-control " id="recipient-name " name="capital">
+                                    <input class="form-control " id="capitalEdit" name="capital ">
                                 </div>
                                 <div class="mb-3 form-group ">
                                     <label for="recipient-name " class="col-form-label ">Code:</label>
-                                    <input class="form-control " id="recipient-name " name="code">
+                                    <input class="form-control " id="codeEdit" name="code ">
                                 </div>
                                 <div class="mb-3 form-group ">
                                     <label for="recipient-name " class="col-form-label ">Continent:</label>
-                                    <input class="form-control " id="recipient-name " name="continent">
+                                    <input class="form-control " id="continentEdit" name="continent ">
                                 </div>
                                 <div class="mb-3 form-group ">
                                     <label for="recipient-name " class="col-form-label ">Nationality:</label>
-                                    <input class="form-control " id="recipient-name " name="nationality">
+                                    <input class="form-control " id="nationalityEdit" name="nationality ">
                                 </div>
 
                                 <button type="submit " class="btn btn-success ">Add new Country</button>
@@ -542,40 +543,40 @@
     </section>
 
 
-    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Update Country</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal" id="editModal " tabindex="-1 " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title " id="exampleModalLabel ">Update Country</h5>
+                    <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body ">
                     <form>
                         <div class="mb-3 form-group ">
                             <label for="recipient-name " class="col-form-label ">Description:</label>
-                            <input class="form-control " id="descriptionEdit " name="description">
+                            <input class="form-control " id="descriptionEdit " name="description ">
                         </div>
                         <div class="mb-3 form-group ">
                             <label for="recipient-name " class="col-form-label ">capital:</label>
-                            <input class="form-control " id="capitalEdit" name="capital">
+                            <input class="form-control " id="capitalEdit " name="capital ">
                         </div>
                         <div class="mb-3 form-group ">
                             <label for="recipient-name " class="col-form-label ">Code:</label>
-                            <input class="form-control " id="codeEdit" name="code">
+                            <input class="form-control " id="codeEdit " name="code ">
                         </div>
                         <div class="mb-3 form-group ">
                             <label for="recipient-name " class="col-form-label ">Continent:</label>
-                            <input class="form-control " id="continentEdit" name="continent">
+                            <input class="form-control " id="continentEdit " name="continent ">
                         </div>
                         <div class="mb-3 form-group ">
                             <label for="recipient-name " class="col-form-label ">Nationality:</label>
-                            <input class="form-control " id="nationalityEdit" name="nationality">
+                            <input class="form-control " id="nationalityEdit " name="nationality ">
                         </div>
                     </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Send message</button>
+                <div class="modal-footer ">
+                    <button type="button " class="btn btn-secondary " data-bs-dismiss="modal ">Close</button>
+                    <button type="button " class="btn btn-primary ">Send message</button>
                 </div>
             </div>
         </div>
@@ -588,22 +589,11 @@
 
 
 
-    <script type="text/javascript">
-        var myModal = document.getElementById('myModal')
-        var myInput = document.getElementById('myInput')
-
-        myModal.addEventListener('shown.bs.modal', function() {
-            myInput.focus()
-        })
-        exampleModal.addEventListener('show.bs.modal', function(event) {
-            var button = event.relatedTarget
-            var recipient = button.getAttribute('data-bs-whatever')
-            var modalTitle = exampleModal.querySelector('.modal-title')
-            var modalBodyInput = exampleModal.querySelector('.modal-body input')
-
-            modalTitle.textContent = 'New message to ' + recipient
-            modalBodyInput.value = recipient
-        })
+    <script type="text/javascript ">
+        function myFunc($id) {
+            var x = 3;
+            console.log(x);
+        }
     </script>
     <!-- container section end -->
     <!-- javascripts -->

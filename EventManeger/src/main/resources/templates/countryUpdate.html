@@ -405,6 +405,63 @@
                     <div>
                         <div>
                             <h2>Update The Country</h2>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>id</th>
+                                        <th>description</th>
+                                        <th>Capital</th>
+                                        <th>Code</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr th:each="country:${countries}">
+                                        <td th:text="${country.id}"></td>
+                                        <td th:text="${country.description}"></td>
+                                        <td th:text="${country.capital}"></td>
+                                        <td th:text="${country.code}">
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <a class="btn btn-success" th:href="@{/countries/update/(id=${country.id})}">Update</a>
+                                                <a class="btn btn-danger" th:href="@{/countries/delete/(id=${country.id})}">Delete</a>
+                                                <button type="button" class="btn btn-primary" id="editButton">Edit</button>
+                                                <a class="btn btn-dark" onclick=" myFunc() ">Updated</a>
+
+                                            </div>
+
+                                            <!-- <form th:action=" " method="POST ">
+                                                <button type="submit " class="btn btn-success ">Edit Country</button>
+            
+            
+                                                </form> -->
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                         </div>

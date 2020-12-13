@@ -30,15 +30,15 @@ public class CountryController {
         return  "redirect:/countries";
     }
 
-//    @RequestMapping("/countries/update")
-//    @PutMapping
-//    public String GetCountriesFind(Model models,int id) {
+    @RequestMapping("/countries/update")
+    public String GetCountriesFind(){
+//    public String GetCountriesFind(Model models,@RequestParam int id) {
 //
 //        Optional<Country> ScountryList=countryService.findById(id);
 //
-//        models.addAttribute("countrie",ScountryList);
-//        return "country";              //link eke  namata anuwa pennan oona html file eke .html kyna tika nathuwa
-//    }
+//        models.addAttribute("countries",ScountryList);
+        return "countryUpdate";              //link eke  namata anuwa pennan oona html file eke .html kyna tika nathuwa
+    }
     @RequestMapping(value = "/countries/delete" ,method = {RequestMethod.DELETE,RequestMethod.GET})
     public String delete(Integer id){
         countryService.delete(id);
@@ -48,7 +48,8 @@ public class CountryController {
     @RequestMapping("/countries/findById")
     @ResponseBody
     public Optional<Country> findById(int id){
-        return countryService.findById(id);
+        return countryService.findById(id) ;
+
     }
 
 

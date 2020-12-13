@@ -45,6 +45,11 @@ public class CountryController {
         return  "redirect:/countries";
 
     }
+    @RequestMapping("/countries/findById")
+    @ResponseBody
+    public Optional<Country> findById(int id){
+        return countryService.findById(id);
+    }
 
 
 

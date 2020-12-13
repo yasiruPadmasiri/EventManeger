@@ -9,39 +9,44 @@
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Country Manegers</title>
+    <title>Sinhala Event Maneger</title>
 
     <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
     <!-- bootstrap theme -->
     <link href="css/bootstrap-theme.css" rel="stylesheet">
     <!--external css-->
     <!-- font icon -->
     <link href="css/elegant-icons-style.css" rel="stylesheet" />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- full calendar css-->
+    <link href="assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
+    <link href="assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
+    <!-- easy pie chart-->
+    <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link href="css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
     <!-- Custom styles -->
+    <link rel="stylesheet" href="css/fullcalendar.css">
+    <link href="css/widgets.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet" />
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-      <script src="js/lte-ie7.js"></script>
-    <![endif]-->
-
+    <link href="css/xcharts.min.css" rel=" stylesheet">
+    <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet">
     <!-- =======================================================
-      Theme Name: NiceAdmin
-      Theme URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-      Author: BootstrapMade
-      Author URL: https://bootstrapmade.com
-    ======================================================= -->
+    Theme Name: NiceAdmin
+    Theme URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
 </head>
 
 <body>
     <!-- container section start -->
     <section id="container" class="">
-        <!--header start-->
+
 
         <header class="header dark-bg">
             <div class="toggle-nav">
@@ -49,7 +54,7 @@
             </div>
 
             <!--logo start-->
-            <a href="index.html" class="logo">Nice <span class="lite">Admin</span></a>
+            <a href="index.html" class="logo"> Event MANEGER  <span class="lite"> SRILANKA</span></a>
             <!--logo end-->
 
             <div class="nav search-row" id="top_menu">
@@ -72,12 +77,12 @@
                     <li id="task_notificatoin_bar" class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <i class="icon-task-l"></i>
-                            <span class="badge bg-important">5</span>
+                            <span class="badge bg-important">6</span>
                         </a>
                         <ul class="dropdown-menu extended tasks-bar">
                             <div class="notify-arrow notify-arrow-blue"></div>
                             <li>
-                                <p class="blue">You have 5 pending tasks</p>
+                                <p class="blue">You have 6 pending letter</p>
                             </li>
                             <li>
                                 <a href="#">
@@ -306,7 +311,7 @@
             <div id="sidebar" class="nav-collapse ">
                 <!-- sidebar menu start-->
                 <ul class="sidebar-menu">
-                    <li class="">
+                    <li class="active">
                         <a class="" href="index.html">
                             <i class="icon_house_alt"></i>
                             <span>Dashboard</span>
@@ -315,63 +320,113 @@
                     <li class="sub-menu">
                         <a href="javascript:;" class="">
                             <i class="icon_document_alt"></i>
-                            <span>Forms</span>
+                            <span>Vehicles</span>
                             <span class="menu-arrow arrow_carrot-right"></span>
                         </a>
                         <ul class="sub">
-                            <li><a class="" href="form_component.html">Form Elements</a></li>
-                            <li><a class="" href="form_validation.html">Form Validation</a></li>
+                            <li><a class="" th:href="@{/vehicleData}">Vehicle Data</a></li>
+                            <li><a class="" th:href="@{/maintaince}">Maintaince</a></li>
+                            <li><a class="" th:href="@{/movement}">Movements</a></li>
+                            <li><a class="" th:href="@{/hire}">Hires</a></li>
                         </ul>
                     </li>
+
                     <li class="sub-menu">
                         <a href="javascript:;" class="">
-                            <i class="icon_desktop"></i>
-                            <span>UI Fitures</span>
+                            <i class="icon_document_alt"></i>
+                            <span>Parameters</span>
                             <span class="menu-arrow arrow_carrot-right"></span>
                         </a>
                         <ul class="sub">
-                            <li><a class="" href="general.html">Components</a></li>
-                            <li><a class="" href="buttons.html">Buttons</a></li>
-                            <li><a class="" href="grids.html">Grids</a></li>
+                            <li><a class="" th:href="@{/make}">Vehicle Make</a></li>
+                            <li><a class="" th:href="@{/vehicleType}">Vehicle Type</a></li>
+                            <li><a class="" th:href="@{/model}">Vehicle Model</a></li>
+                            <li><a class="" th:href="@{/statusValue}">Status Values</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a class="" href="widgets.html">
-                            <i class="icon_genius"></i>
-                            <span>Widgets</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="" href="chart-chartjs.html">
-                            <i class="icon_piechart"></i>
-                            <span>Charts</span>
+                    <!-- 
+                        <li>
+                            <a class="" href="widgets.html">
+                                <i class="icon_genius"></i>
+                                <span>Widgets</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="chart-chartjs.html">
+                                <i class="icon_piechart"></i>
+                                <span>Charts</span>
 
-                        </a>
+                            </a> -->
 
+
+
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon_table"></i>
+                            <span>People</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" th:href="@{/clients}">Clients</a></li>
+                            <li><a class="" th:href="@{/employee}">Employees</a></li>
+                            <li><a class="" th:href="@{/supplier}">Suppliers</a></li>
+                            <li><a class="" th:href="@{/Contacts}">Contacts </a></li>
+                            <li><a class="" th:href="@{/user}">Users </a></li>
+                        </ul>
                     </li>
 
                     <li class="sub-menu">
                         <a href="javascript:;" class="">
                             <i class="icon_table"></i>
-                            <span>Tables</span>
+                            <span>HR Settings</span>
                             <span class="menu-arrow arrow_carrot-right"></span>
                         </a>
                         <ul class="sub">
-                            <li><a class="" href="basic_table.html">Basic Table</a></li>
+                            <li><a class="" th:href="@{/jobTitle}">Job Title</a></li>
+                            <li><a class="" th:href="@{/employeeType}">Employees Type</a></li>
+
                         </ul>
                     </li>
 
-                    <li class="sub-menu ">
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon_table"></i>
+                            <span>Acounts</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" th:href="@{/invoice}">Invoice</a></li>
+                            <li><a class="" th:href="@{/invoiceStatus}">Invoice Status Value</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon_table"></i>
+                            <span>Globals</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" th:href="@{/countries}">Countries</a></li>
+                            <li><a class="" th:href="@{/state}">States</a></li>
+                            <li><a class="" th:href="@{/location}">Location</a></li>
+
+                        </ul>
+                    </li>
+
+
+
+                    <li class="sub-menu">
                         <a href="javascript:;" class="">
                             <i class="icon_documents_alt"></i>
-                            <span>Pages</span>
+                            <span>Settiing</span>
                             <span class="menu-arrow arrow_carrot-right"></span>
                         </a>
                         <ul class="sub">
                             <li><a class="" href="profile.html">Profile</a></li>
                             <li><a class="" href="login.html"><span>Login Page</span></a></li>
                             <li><a class="" href="contact.html"><span>Contact Page</span></a></li>
-                            <li><a class="active" href="blank.html">Blank Page</a></li>
+                            <li><a class="" href="blank.html">Blank Page</a></li>
                             <li><a class="" href="404.html">404 Error</a></li>
                         </ul>
                     </li>
@@ -402,7 +457,7 @@
 
 
 
-                <table class="table">
+                <table class="table" style="margin-left: 100px;">
                     <thead>
                         <tr>
                             <th>id</th>
@@ -421,9 +476,14 @@
                             </td>
                             <td>
                                 <div class="btn-group">
-                                    <a class="btn btn-success" th:href="@{/countries/findById/(id=${country.id})}">Update</a>
-                                    <a class="btn btn-danger" th:href="@{/countries/delete/(id=${country.id})}">Delete</a>
-                                    <button type="button" class="btn btn-primary" id="editButton">Edit</button>
+                                    <a class="btn btn-success" th:href="@{/countries/findById/(id=${country.id})}">
+                                        <i class="icon_pencil-edit">
+                                            </i>
+                                    </a>
+                                    <a class="btn btn-danger" th:href="@{/countries/delete/(id=${country.id})}">
+                                        <i class="icon_close_alt2"></i>
+                                    </a>
+                                    <button type="button" class="btn btn-primary" id="editButton"> <i class="icon_document_alt"></i></button>
                                     <a class="btn btn-dark" onclick=" myFunc() ">Updated</a>
 
                                 </div>

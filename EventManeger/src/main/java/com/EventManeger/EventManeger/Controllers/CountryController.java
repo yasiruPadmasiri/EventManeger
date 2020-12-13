@@ -28,5 +28,9 @@ public class CountryController {
         countryService.save(country);
         return  "redirect:/countries";
     }
+    @GetMapping("countries/updateCountry")
+    public String updateCountry(){
+        return  "countryUpdate";
+    }
 
 }

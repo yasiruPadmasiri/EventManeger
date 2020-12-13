@@ -9,7 +9,7 @@
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Country Manegers</title>
+    <title>Country Manegment</title>
 
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -396,52 +396,21 @@
                     </div>
                 </div>
                 <!-- page start-->
-                <h1>
-                    List Of countries
-                </h1>
 
 
 
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>id</th>
-                            <th>description</th>
-                            <th>Capital</th>
-                            <th>Code</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr th:each="country:${countries}">
-                            <td th:text="${country.id}"></td>
-                            <td th:text="${country.description}"></td>
-                            <td th:text="${country.capital}"></td>
-                            <td th:text="${country.code}">
-                            </td>
-                            <td>
-                                <form th:action="@{/updateCountry}">
-                                    <button type="submit " class="btn btn-success ">Edit Country</button>
-
-
-                                </form>
-                            </td>
-                        </tr>
-
-                    </tbody>
-                </table>
                 <br>
                 <br>
                 <div>
                     <div>
                         <div>
-                            <h2>Add New Country</h2>
+                            <h2>Update The Country</h2>
 
 
                         </div>
                         <div style="margin-left: 150px;margin-right: 150px;margin-top: 50px;">
                             <div style="margin-bottom: 50px;">
-                                <button class="btn btn-primary"> ADD NEW COUNTRY TO THE SYSTEM</button>
+                                <button class="btn btn-primary"> UPDATE COUNTRY IN THE SYSTEM</button>
                             </div>
                             <form th:action="@{/countries/addNew}" method="POST">
                                 <div class="mb-3 form-group ">
@@ -511,14 +480,13 @@
     </script> -->
     <!-- container section end -->
     <!-- javascripts -->
-    <script src="js/jquery.js ">
-    </script>
-    <script src="js/bootstrap.min.js "></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- nice scroll -->
-    <script src="js/jquery.scrollTo.min.js "></script>
-    <script src="js/jquery.nicescroll.js " type="text/javascript "></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
     <!--custome script for all page-->
-    <script src="js/scripts.js "></script>
+    <script src="js/scripts.js"></script>
 
 
 

@@ -9,7 +9,7 @@
   <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
   <link rel="shortcut icon" href="img/favicon.png">
 
-  <title>EVENT MANEGER LOGING</title>
+  <title>EVENT MANEGER SIGNING UP</title>
 
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -37,27 +37,28 @@
     ======================================================= -->
 </head>
 
-<body style=" background-image:bg-11;" class="login-img3-body">
+<body class="login-img3-body">
 
   <div class="container">
 
-    <form class="login-form" action="index.html">
+    <form class="login-form" th:action="@{/signup/Create}" method="post">
       <div class="login-wrap">
         <p class="login-img"><i class="icon_lock_alt"></i></p>
         <div class="input-group">
           <span class="input-group-addon"><i class="icon_profile"></i></span>
-          <input type="text" class="form-control" placeholder="Username" name="username" autofocus>
+          <input type="text" class="form-control" name="usernasme" placeholder="Username" autofocus>
         </div>
         <div class="input-group">
+            <span class="input-group-addon"><i class="icon_profile"></i></span>
+            <input type="text" class="form-control" name="Email" placeholder="Email Address" autofocus>
+          </div>
+        <div class="input-group">
           <span class="input-group-addon"><i class="icon_key_alt"></i></span>
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" class="form-control" name="password" placeholder="Password">
         </div>
-        <label class="checkbox">
-                <input type="checkbox" value="remember-me"> Remember me
-                <span class="pull-right"> <a href="#"> Forgot Password?</a></span>
-            </label>
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
-        <a class="btn btn-info btn-lg btn-block" type="button"th:href="@{/signup}"><b>Signup</b></a>
+        
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Create Account</button>
+      
       </div>
     </form>
     

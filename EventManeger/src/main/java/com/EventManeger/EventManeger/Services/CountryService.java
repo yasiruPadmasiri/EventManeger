@@ -28,11 +28,11 @@ public class CountryService {
 
 
     // find by ID
-    public Optional<Country> findById(int id){
-        return    countryRepository.findById(id);
-    }
-
-    public void delete(Integer id) {
-        countryRepository.deleteById(id);
-    }
+//    public Optional<Country> findById(int id){
+//        return    countryRepository.findById(id);
+//    }
+//
+//    public void delete(Integer id) {
+//        countryRepository.deleteById(id);
+//    }
 }

@@ -17,6 +17,8 @@ public class CountryController {
     @Autowired
     private CountryService countryService;
 
+
+    
     @GetMapping("/countries")          //link eke wetena nama
     public String GetCountries(Model model) {
 
@@ -24,35 +26,54 @@ public class CountryController {
         model.addAttribute("countries",countryList);
         return "country";              //link eke  namata anuwa pennan oona html file eke .html kyna tika nathuwa
     }
+
+
+
+
+
+
     @PostMapping("/countries/addNew")
     public String addNew(Country country){
         countryService.save(country);
         return  "redirect:/countries";
     }
-
-    @RequestMapping("/countries/update")
-    public String GetCountriesFind(){
-//    public String GetCountriesFind(Model models,@RequestParam int id) {
-//
-//        Optional<Country> ScountryList=countryService.findById(id);
-//
-//        models.addAttribute("countries",ScountryList);
-        return "countryUpdate";              //link eke  namata anuwa pennan oona html file eke .html kyna tika nathuwa
-    }
-    @RequestMapping(value = "/countries/delete" ,method = {RequestMethod.DELETE,RequestMethod.GET})
-    public String delete(Integer id){
-        countryService.delete(id);
-        return  "redirect:/countries";
-
-    }
-    @RequestMapping("/countries/findById")
-    @ResponseBody
-    public Optional<Country> findById(Model models,int id){
-
-        return countryService.findById(id) ;
-
-    }
-
-
-
 }
+
+
+
+
+
+
+
+
+
+//    @RequestMapping("/countries/update")
+//    public String GetCountriesFind() {
+////    public String GetCountriesFind(Model models,@RequestParam int id) {
+////
+////        Optional<Country> ScountryList=countryService.findById(id);
+////
+////        models.addAttribute("countries",ScountryList);
+//        return "countryUpdate";              //link eke  namata anuwa pennan oona html file eke .html kyna tika nathuwa
+////    }
+
+
+
+
+//    @RequestMapping(value = "/countries/delete" ,method = {RequestMethod.DELETE,RequestMethod.GET})
+//    public String delete(Integer id){
+//        countryService.delete(id);
+//        return  "redirect:/countries";
+//
+//    }
+//    @RequestMapping("/countries/findById")
+//    @ResponseBody
+//    public Optional<Country> findById(Model models,int id){
+//
+//        return countryService.findById(id) ;
+//
+//    }
+
+
+
+

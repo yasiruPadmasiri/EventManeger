@@ -19,12 +19,6 @@ public class CountryService {
     }
 
 
-    //save country
-
-    public void  save(Country country){
-        countryRepository.save(country);
-    }
-
 
 
     // find by ID

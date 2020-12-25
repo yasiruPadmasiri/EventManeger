@@ -37,16 +37,16 @@ public class LogingController {
 
     @RequestMapping(value = "index")
     public String Gohome(){
-        return "land";
+        return "blank";
     }
 
     @RequestMapping(value = "/log",method = RequestMethod.POST)
     public  String tryLog( LogingData user){
         Integer x=logingService.tryLogin(user);
-        if(x==0){
+        if(x==1){
         return    Gohome();
         }else{
-        return "signupPage";
+            return  signUp();
         }
     }
 

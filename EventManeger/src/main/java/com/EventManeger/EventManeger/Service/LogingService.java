@@ -34,8 +34,9 @@ public class LogingService {
 
         LogingData U=users.stream().filter(t->user.getUsername().equals(t.getUsername())).findFirst().orElse(null);
             System.out.print(U);
-
-
+            if (U!=null);{
+                x=1;
+        }
 
 
 

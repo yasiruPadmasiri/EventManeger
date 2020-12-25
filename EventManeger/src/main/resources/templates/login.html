@@ -22,6 +22,7 @@
   <!-- Custom styles -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/style-responsive.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="">
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
   <!--[if lt IE 9]>
@@ -41,7 +42,7 @@
 
   <div class="container">
 
-    <form class="login-form" action="index.html">
+    <form class="login-form" th:action="@{/loguser}" method="post">
       <div class="login-wrap">
         <p class="login-img"><i class="icon_lock_alt"></i></p>
         <div class="input-group">

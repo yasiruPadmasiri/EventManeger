@@ -22,6 +22,7 @@
   <!-- Custom styles -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/style-responsive.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="">
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
   <!--[if lt IE 9]>
@@ -41,12 +42,12 @@
 
   <div class="container">
 
-    <form class="login-form" th:action="@{/signup/Create}" method="post">
+    <form class="login-form" th:action="@{/signin}" method="post">
       <div class="login-wrap">
         <p class="login-img"><i class="icon_lock_alt"></i></p>
         <div class="input-group">
           <span class="input-group-addon"><i class="icon_profile"></i></span>
-          <input type="text" class="form-control" name="usernasme" placeholder="Username" autofocus>
+          <input type="text" class="form-control" name="Username" placeholder="Username" autofocus>
         </div>
         <div class="input-group">
             <span class="input-group-addon"><i class="icon_profile"></i></span>
@@ -54,7 +55,7 @@
           </div>
         <div class="input-group">
           <span class="input-group-addon"><i class="icon_key_alt"></i></span>
-          <input type="password" class="form-control" name="password" placeholder="Password">
+          <input type="password" class="form-control" name="Password" placeholder="Password">
         </div>
         
         <button class="btn btn-primary btn-lg btn-block" type="submit">Create Account</button>

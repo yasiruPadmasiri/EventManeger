@@ -23,4 +23,32 @@ public class LogingService {
 
 
 
+    public Integer tryLogin(LogingData user){
+
+
+        if (user.getUsername()==null){
+            return  0;
+        }
+        Integer x=0;
+        users=logingRepository.findAll();
+
+        LogingData U=users.stream().filter(t->user.getUsername().equals(t.getUsername())).findFirst().orElse(null);
+            System.out.print(U);
+
+
+
+
+
+        if (x==0){
+            return  0;
+        }else{
+            return 1;
+        }
+
+
+
+    }
+
+
+
 }

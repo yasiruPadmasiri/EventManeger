@@ -9,18 +9,9 @@ public class ApplicationController {
 
     @GetMapping("/index")
     public String goHome(){
-        return "index";
+        return "land";
 
     }
-    @GetMapping("/login")
-    public String Index(){
-        return "index";
 
-    }
-    @GetMapping("/index")
-    public String goLoging(){
-        return "login";
-
-    }
 
 }

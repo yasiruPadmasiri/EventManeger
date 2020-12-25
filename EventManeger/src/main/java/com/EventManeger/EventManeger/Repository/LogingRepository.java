@@ -7,5 +7,4 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface LogingRepository  extends JpaRepository<LogingData, Integer> {
 
-    LogingData findByUsername(String username);
 }

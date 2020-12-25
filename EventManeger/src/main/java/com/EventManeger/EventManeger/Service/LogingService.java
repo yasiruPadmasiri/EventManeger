@@ -19,15 +19,8 @@ public class LogingService {
     public void save(LogingData user){
         logingRepository.save(user);
     }
-    public void findById(LogingData user){
-        users=logingRepository.findAll();
-        for (int i = 0; i < users.size(); i++) {
-            LogingData U = users.get(i);
-            if(U.getUsername().equals(user.getUsername())|| U.getPassword().equals(user.getPassword())){
-
-            }
-        }
 
 
-    }
+
+
 }

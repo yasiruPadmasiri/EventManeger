@@ -37,9 +37,7 @@ public class LogingService {
             if (U!=null);{
                 x=1;
         }
-
-
-
+        
         if (x==0){
             return  0;
         }else{

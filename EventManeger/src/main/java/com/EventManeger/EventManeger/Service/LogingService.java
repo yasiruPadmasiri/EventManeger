@@ -36,12 +36,13 @@ public class LogingService {
             System.out.print(U);
             if (U!=null);{
                 x=1;
+            x=U.getId();
         }
         
         if (x==0){
             return  0;
         }else{
-            return 1;
+            return x;
         }
 
 

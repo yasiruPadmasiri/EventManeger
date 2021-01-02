@@ -9,6 +9,8 @@ import sun.security.util.Password;
 
 @Controller
 public class LogingController {
+
+     public  Integer logId;
     @Autowired
     private LogingService logingService;
 
@@ -16,6 +18,11 @@ public class LogingController {
 
     @RequestMapping(value = "/login")
     public String Log(){
+
+        return "login";
+    }
+    @RequestMapping(value = "/")
+    public String Logmain(){
 
         return "login";
     }
@@ -37,16 +44,20 @@ public class LogingController {
 
     @RequestMapping(value = "index")
     public String Gohome(){
+
         return "blank";
     }
 
+
     @RequestMapping(value = "/log",method = RequestMethod.POST)
     public  String tryLog( LogingData user){
-        Integer x=logingService.tryLogin(user);
-        if(x==1){
-        return    Gohome();
-        }else{
+          Integer x=logingService.tryLogin(user);
+          logId=x;
+        if(x==0){
             return  signUp();
+        }else{
+
+            return    Gohome();
         }
     }
 

@@ -29,6 +29,10 @@ public class LogingData {
         return Username;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
     public void setUsername(String username) {
         Username = username;
     }

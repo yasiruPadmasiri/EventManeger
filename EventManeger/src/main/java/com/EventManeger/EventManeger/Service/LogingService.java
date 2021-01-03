@@ -35,20 +35,13 @@ public class LogingService {
         LogingData U=users.stream().filter(t->user.getUsername().equals(t.getUsername())).findFirst().orElse(null);
             System.out.print(U);
 
-            if (U!=null);{
+            if (U!=null){
             if (U.getPassword().equals(user.getPassword())) {
                 x=1;
                 x=U.getId();
                 System.out.println("here commitng");
             }
-
-
             }
-
-
-
-
-        
         if (x==0){
             return  0;
         }else{

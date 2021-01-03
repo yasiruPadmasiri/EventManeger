@@ -53,8 +53,10 @@ public class LogingController {
     public  String tryLog( LogingData user){
           Integer x=logingService.tryLogin(user);
           logId=x;
+          System.out.println("");
+          System.out.print(x);
         if(x==0){
-            return  signUp();
+            return  Logmain();
         }else{
 
 

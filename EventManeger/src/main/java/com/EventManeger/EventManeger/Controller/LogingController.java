@@ -48,7 +48,7 @@ public class LogingController {
             return "blank";
         }
         else{
-           return "login";
+           return "redirect:login";
         }
 
 

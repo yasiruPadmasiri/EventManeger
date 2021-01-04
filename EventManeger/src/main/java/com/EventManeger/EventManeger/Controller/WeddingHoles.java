@@ -15,4 +15,8 @@ public class WeddingHoles {
     public String WeddingHoleSearchView(){
         return "weddingHolesSearchView";
     }
+    @RequestMapping(value = "/hotel_add_publish")
+    public  String publishHitelAdd(){
+        return "about";
+    }
 }

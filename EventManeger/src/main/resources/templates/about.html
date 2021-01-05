@@ -319,38 +319,44 @@
                           <div class="row">
                             
                             <div class="col-lg-4 col-md-4 col-sm-6">                                
-                                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-box img-thumbnail" alt="avatar">
+                                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="one avatar img-box img-thumbnail" alt="avatar">
                                 <h6>Upload  First Photo.</h6>
                                 <input type="file" class="text-center center-block file-upload">
                               </div>
 
                               <div class="col-lg-4 col-md-4 col-sm-6">
-                                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-box img-thumbnail" alt="avatar">
+                                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="two img-box img-thumbnail" alt="avatar">
                                 <h6>Upload Second Photo</h6>
-                                <input type="file" class="text-center center-block file-upload">
+                                <input type="file" name="second " class="text-center center-block file-upload">
                               </div>
 
                               <div class="col-lg-4 col-md-4 col-sm-6">
-                                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-box img-thumbnail" alt="avatar">
+                                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="three img-box img-thumbnail" alt="avatar">
                                 <h6>Upload Third Photo </h6>
                                 <input type="file" class="text-center center-block file-upload">
                               </div>
 
                               <div class="col-lg-4 col-md-4 col-sm-6">
-                                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-box img-thumbnail" alt="avatar">
+                                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="four img-box img-thumbnail" alt="avatar">
                                 <h6>Upload a Fourth Photo</h6>
                                 <input type="file" class="text-center center-block file-upload">
                               </div>
                               <div class="col-lg-4 col-md-4 col-sm-6">
-                                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-box img-thumbnail" alt="avatar">
+                                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="five img-box img-thumbnail" alt="avatar">
                                 <h6>Upload Fofoth Photo</h6>
                                 <input type="file" class="text-center center-block file-upload">
                               </div>
+
+
                               <div class="col-lg-4 col-md-4 col-sm-6">
-                                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-box img-thumbnail" alt="avatar">
-                                <h6>Upload  Sixth Photo</h6>
-                                <input type="file" class="text-center center-block file-upload">
-                              </div>
+                                  
+                                <input type='file' onchange="readURL(this);" />
+                                <img id="blah" src="#" alt="your image" /></div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                  
+                                <input type='file' onchange="readURL(this);" />
+                                <img id="blah" src="#" alt="your image" /></div>
                             </div>
                            
 
@@ -456,6 +462,33 @@
               </div><!--/col-9-->
           </div><!--/row-->
           <script type="text/javascript" >
+          
+          function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width(150)
+                    .height(200);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
           $(document).ready(function() {
       
           
@@ -464,7 +497,15 @@
               var reader = new FileReader();
       
               reader.onload = function (e) {
-                  $('.avatar').attr('src', e.target.result);
+                  $('.one').attr('src', e.target.result);
+                  $('.two').attr('src', e.target.result);
+                  $('.three').attr('src', e.target.result);
+                  $('.four').attr('src', e.target.result);
+                  $('.five').attr('src', e.target.result);
+                  $('.six').attr('src', e.target.result);
+                  $('.seven').attr('src', e.target.result);
+                  $('.elight').attr('src', e.target.result);
+                  $('.nine').attr('src', e.target.result);
               }
       
               reader.readAsDataURL(input.files[0]);
@@ -472,7 +513,7 @@
       }
       
       
-      $(".file-upload").on('change', function(){
+      $(".file-uploadOne").on('change', function(){
           readURL(this);
       });
       });

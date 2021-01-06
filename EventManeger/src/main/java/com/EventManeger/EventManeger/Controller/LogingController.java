@@ -40,6 +40,7 @@ public class LogingController {
     public String createAccount( LogingData user){
         logingService.save(user);
         return "login";
+        
     }
 
     @RequestMapping(value = "index")

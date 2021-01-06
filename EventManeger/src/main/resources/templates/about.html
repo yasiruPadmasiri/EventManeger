@@ -314,10 +314,11 @@
                                 </div>
                             </div>
 
-
+<br>
+<br>
 
                           <div class="row">
-                            
+<!--                             
                             <div class="col-lg-4 col-md-4 col-sm-6">                                
                                 <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="one avatar img-box img-thumbnail" alt="avatar">
                                 <h6>Upload  First Photo.</h6>
@@ -345,20 +346,67 @@
                                 <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="five img-box img-thumbnail" alt="avatar">
                                 <h6>Upload Fofoth Photo</h6>
                                 <input type="file" class="text-center center-block file-upload">
-                              </div>
+                              </div> -->
 
 
-                              <div class="col-lg-4 col-md-4 col-sm-6">
-                                  
-                                <input type='file' onchange="readURL(this);" />
-                                <img id="blah" src="#" alt="your image" /></div>
-                            </div>
+                              
+
+
+
                             <div class="col-lg-4 col-md-4 col-sm-6">
-                                  
+                                <img id="blah" src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png"  class="Two img-box img-thumbnail" alt="your image" />
+
                                 <input type='file' onchange="readURL(this);" />
-                                <img id="blah" src="#" alt="your image" /></div>
                             </div>
                            
+                            
+
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <img id="One" src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png"  class="Two img-box img-thumbnail" alt="your image" />
+
+                                <input type='file' onchange="OnereadURL(this);" />
+                            </div>
+                           
+                            
+
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <img id="Two" src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png"  class="Two img-box img-thumbnail" alt="your image" />
+
+                                <input type='file' onchange="TworeadURL(this);" />
+                            </div>
+                           
+                           
+
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <img id="Three" src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png"  class="Two img-box img-thumbnail" alt="your image" />
+
+                                <input type='file' onchange="ThreereadURL(this);" />
+                            </div>
+                           
+                            
+
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <img id="Four" src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png"  class="Two img-box img-thumbnail" alt="your image" />
+
+                                <input type='file' onchange="FourreadURL(this);" />
+                            </div>
+                           
+                            
+
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <img id="Five" src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png"  class="Two img-box img-thumbnail" alt="your image" />
+
+                                <input type='file' onchange="FivereadURL(this);" />
+                            </div>
+                           
+
+                           
+                           
+                            </div>
+                           
+
+                           
+
 
 
 
@@ -461,22 +509,136 @@
       
               </div><!--/col-9-->
           </div><!--/row-->
-          <script type="text/javascript" >
+
+
+
+<script type="text/javascript" >
           
-          function readURL(input) {
+
+    function readURL(input) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
 
             reader.onload = function (e) {
+
+                if($('#blah')){
+                    
                 $('#blah')
                     .attr('src', e.target.result)
-                    .width(150)
-                    .height(200);
+                    ;
+
+                }
+
             };
 
             reader.readAsDataURL(input.files[0]);
         }
     }
+
+    function OnereadURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+
+                if($('#One')){
+                    
+                $('#One')
+                    .attr('src', e.target.result)
+                    ;
+
+                }
+
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    function TworeadURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+
+                if($('#Two')){
+                    
+                $('#Two')
+                    .attr('src', e.target.result)
+                    ;
+
+                }
+
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function ThreereadURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+
+                if($('#Three')){
+                    
+                $('#Three')
+                    .attr('src', e.target.result)
+                    ;
+
+                }
+
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+    function FourreadURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+
+                if($('#Four')){
+                    
+                $('#Four')
+                    .attr('src', e.target.result)
+                    ;
+
+                }
+
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function FivereadURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+
+                if($('#Five')){
+                    
+                $('#Five')
+                    .attr('src', e.target.result)
+                    ;
+
+                }
+
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+
+
+
 
 
 
@@ -497,15 +659,8 @@
               var reader = new FileReader();
       
               reader.onload = function (e) {
-                  $('.one').attr('src', e.target.result);
-                  $('.two').attr('src', e.target.result);
-                  $('.three').attr('src', e.target.result);
-                  $('.four').attr('src', e.target.result);
-                  $('.five').attr('src', e.target.result);
-                  $('.six').attr('src', e.target.result);
-                  $('.seven').attr('src', e.target.result);
-                  $('.elight').attr('src', e.target.result);
-                  $('.nine').attr('src', e.target.result);
+                  $('.avatar').attr('src', e.target.result);
+               
               }
       
               reader.readAsDataURL(input.files[0]);
@@ -513,7 +668,7 @@
       }
       
       
-      $(".file-uploadOne").on('change', function(){
+      $(".file-upload").on('change', function(){
           readURL(this);
       });
       });

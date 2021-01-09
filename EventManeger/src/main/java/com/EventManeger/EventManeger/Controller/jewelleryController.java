@@ -9,4 +9,8 @@ public class jewelleryController {
     public String jewellery(){
         return "jewellery";
     }
+    @RequestMapping(value = "/jewellery_Search")
+    public String jewellery_Search(){
+        return "jewellerySearch";
+    }
 }

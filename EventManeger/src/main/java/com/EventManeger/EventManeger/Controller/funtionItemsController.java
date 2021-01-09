@@ -9,4 +9,9 @@ public class funtionItemsController {
     public  String funtionItems(){
         return "funtionItems";
     }
+
+    @RequestMapping(value = "funtionItem_Search")
+    public String funtionItem_Search(){
+        return "functionItemsSearch";
+    }
 }

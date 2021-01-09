@@ -9,4 +9,9 @@ public class bridleWorksController {
     public  String bridleWorks(){
         return "bridleWorks";
     }
+
+    @RequestMapping(value = "bridle_Search")
+    public String bridleSearch(){
+        return "bridleSearch";
+    }
 }

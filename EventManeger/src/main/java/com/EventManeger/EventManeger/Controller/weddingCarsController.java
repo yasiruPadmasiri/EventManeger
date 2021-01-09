@@ -9,4 +9,8 @@ public class weddingCarsController {
     public String weddingCars(){
         return "weddingCars";
     }
+    @RequestMapping(value = "weddingCar_Search")
+    public String weddingCar_Search(){
+        return "weddingcarSearch";
+    }
 }

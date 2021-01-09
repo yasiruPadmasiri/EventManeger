@@ -9,4 +9,9 @@ public class photographyController {
     public String photography(){
         return  "photography";
     }
+    @RequestMapping(value = "photography_Search")
+    public String photography_Search(){
+        return "photographySearch";
+    }
+
 }

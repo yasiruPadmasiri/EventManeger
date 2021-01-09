@@ -9,4 +9,8 @@ public class entertaintmentsController {
     public String entertaintments(){
         return "entertaintments";
     }
+    @RequestMapping(value = "/entertainment_Search")
+    public String entetainmentSearch(){
+        return "entertaintmentSearch";
+    }
 }

@@ -9,4 +9,8 @@ public class invitationCardsController {
     public String invitationCards(){
         return "invitationCards";
     }
+    @RequestMapping(value = "cards_Search")
+    public String cards_Search(){
+        return "invitationCardSearch";
+    }
 }

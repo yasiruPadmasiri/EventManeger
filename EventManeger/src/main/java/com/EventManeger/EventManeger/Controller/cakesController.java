@@ -10,4 +10,9 @@ public class cakesController {
         return "cakes";
 
     }
+
+    @RequestMapping(value = "cakeSearch")
+    public String cakeSearch(){
+        return "cakeSearch";
+    }
 }

@@ -10,4 +10,8 @@ public class eventPlanersController {
         return "eventPlaners";
 
     }
+    @RequestMapping(value = "eventPlanners_Search")
+    public String eventPlanners_Search(){
+        return "eventPlannersSearch";
+    }
 }

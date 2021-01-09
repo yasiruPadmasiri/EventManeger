@@ -43,6 +43,11 @@ public class LogingController {
 
     }
 
+    @RequestMapping(value = "editProfile")
+    public String goProfile(){
+        return "EditProfile";
+    }
+
     @RequestMapping(value = "index")
     public String Gohome(){
         if (loginStatus.equals(1)){

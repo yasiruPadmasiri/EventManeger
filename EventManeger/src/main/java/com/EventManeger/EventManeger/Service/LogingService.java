@@ -2,9 +2,12 @@ package com.EventManeger.EventManeger.Service;
 
 import com.EventManeger.EventManeger.Model.LogingData;
 import com.EventManeger.EventManeger.Repository.LogingRepository;
+import org.hibernate.sql.Insert;
+import org.hibernate.sql.Select;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.criteria.From;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

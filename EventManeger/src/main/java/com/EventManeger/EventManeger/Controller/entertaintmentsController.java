@@ -13,4 +13,10 @@ public class entertaintmentsController {
     public String entetainmentSearch(){
         return "entertaintmentSearch";
     }
+
+    @RequestMapping(value = "entertainment_add_publish")
+    public String entertainment_add_publish(){
+        return "entertaintment_add_publish";
+
+    }
 }

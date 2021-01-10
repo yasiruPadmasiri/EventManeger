@@ -13,5 +13,9 @@ public class photographyController {
     public String photography_Search(){
         return "photographySearch";
     }
+    @RequestMapping(value = "/photography_add_publish")
+    public String photography_add_publish(){
+        return "photography_add_publish";
+    }
 
 }

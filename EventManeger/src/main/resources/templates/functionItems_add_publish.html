@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Loanday Template">
+    <meta name="keywords" content="Loanday, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Uthsawa .Lk</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet"  th:href="@{/css/bootstrap.min.css}" />
+    <link rel="stylesheet"  th:href="@{/css/font-awesome.min.css}" />
+    <link rel="stylesheet" th:href="@{/css/elegant-icons.css}" />
+    <link rel="stylesheet" th:href="@{/css/nice-select.css}" />
+    <link rel="stylesheet" th:href="@{/css/magnific-popup.css}" />
+    <link rel="stylesheet" th:href="@{/css/jquery-ui.min.css}" />
+    <link rel="stylesheet" th:href="@{/css/owl.carousel.min.css}" />
+    <link rel="stylesheet" th:href="@{/css/slicknav.min.css}" />
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+
+
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__search">
+            <i class="fa fa-search search-switch"></i>
+        </div>
+        <div class="offcanvas__logo">
+            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <nav class="offcanvas__menu mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="#">Pages</a>
+                    <ul class="dropdown">
+                        <li><a href="./services.html">Features</a></li>
+                        <li><a href="./services-details.html">Services Details</a></li>
+                        <li><a href="./blog-details.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <ul class="offcanvas__widget">
+            <li><i class="fa fa-map-marker"></i> 96 Ernser Vista Suite 437, NY, US</li>
+            <li><i class="fa fa-phone"></i> (123) 456-78-910</li>
+            <li><i class="fa fa-envelope"></i> Info@colorlib.com</li>
+        </ul>
+        <div class="offcanvas__language">
+            <img src="img/flag.png" alt="">
+            <span>English</span>
+            <i class="fa fa-angle-down"></i>
+            <ul>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Bangla</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <ul class="header__top__widget">
+                            <li><i class="fa fa-map-marker"></i> 96 Ernser Vista Suite 437, NY, US</li>
+                            <li><i class="fa fa-phone"></i> (123) 456-78-910</li>
+                            <li><i class="fa fa-envelope"></i> Info@colorlib.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="header__top__language">
+                            <img src="img/flag.png" alt="">
+                            <span>English</span>
+                            <i class="fa fa-angle-down"></i>
+                            <ul>
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Bangla</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!-- <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/uthsawaLk.png" style="height: 100px;" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="header__nav">
+                        
+                        <div class="header__search">
+                            <i class="fa fa-search search-switch"></i>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="canvas__open">
+                <span class="fa fa-bars"></span>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <div class="breadcrumb-option set-bg" data-setbg="img/breadcrumb/breadcrumb-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Publish Your Add</h2>
+                        <div class="breadcrumb__links">
+                            <a href="./index.html">Function Items</a>
+                            <span>Add Publish</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section End -->
+
+    <!-- About Section Begin -->
+    <section class="about spad">
+        
+            <!-- <div class="about__content">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="about__img">
+                            <img src="img/about/about.jpg" alt="">
+                            <a href="https://www.youtube.com/watch?v=RpvAmG1NNN0"
+                                class="play-btn video-popup"><img src="img/about/video-play.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1">
+                        <div class="about__text">
+                            <h2>Welcome To Uthsawa . Lk</h2>
+                            <h4>In here Put description about publish the add /h4>
+                            <p class="first_para">Where a powerful web presence has become a vital ingredient of your
+                                branding </p>
+                            <p class="last_para">Unfortunately, many graphic design firms who position themselves as
+                                advertising agencies believe that branding your corporate identity is all about
+                                developing great looking visual solutions.</p>
+                            <a href="#" class="primary-btn">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="about__item">
+                        <h4>Our Vision</h4>
+                        <p>The modern world is in a continuous movement and people everywhere are looking for quick,
+                            safe means of accessing accurate information. Prompt information is vital for people who
+                            want to keep the</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="about__item">
+                        <h4>Our Mission</h4>
+                        <p>The modern world is in a continuous movement and people everywhere are looking for quick,
+                            safe means of accessing accurate information. Prompt information is vital for people who
+                            want to keep the</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="about__item">
+                        <h4>Our Value</h4>
+                        <p>The modern world is in a continuous movement and people everywhere are looking for quick,
+                            safe means of accessing accurate information. Prompt information is vital for people who
+                            want to keep the</p>
+                    </div>
+                </div>
+            </div> -->
+
+
+
+
+
+            <div class="container bootstrap snippet">
+
+
+            <div class="row">
+                <div class="col-sm-10"><h1>Add Publish Form</h1></div>
+              <div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image" class="img-circle img-responsive" src="img/uthsawaLk.png"></a></div>
+          </div>
+          <div class="row">
+                <div class="col-sm-3"><!--left col-->
+                    
+    
+                    <!-- photo file uplaod -->
+            <div class="text-center">
+              <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-box img-thumbnail" alt="avatar">
+              <h6>Upload a Cover photo...</h6>
+              <input type="file" class="text-center center-block file-upload">
+            </div></hr><br>
+      
+<!--                      
+                <div class="panel panel-default">
+                  <div class="panel-heading">Website <i class="fa fa-link fa-1x"></i></div>
+                  <div class="panel-body"><a href="http://bootnipets.com">bootnipets.com</a></div>
+                </div> -->
+                
+                
+               
+                
+              </div><!--/col-3-->
+              <div class="col-sm-9">
+                  <ul class="nav nav-tabs">
+                      <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                      <!-- <li><a data-toggle="tab" href="#messages">Menu 1</a></li>
+                      <li><a data-toggle="tab" href="#settings">Menu 2</a></li> -->
+                    </ul>
+      
+                    
+                <div class="tab-content">
+                  <div class="tab-pane active" id="home">
+                      <hr>
+                        <form class="form" action="##" method="post" id="registrationForm">
+                            <div class="form-group">
+                                
+                                <div class="col-xs-6">
+                                    <label for="first_name"><h4><b>Your Offical Name</label>
+                                    <input type="text" class="form-control" name="Name" id="first_name" placeholder="Amanda vila Resort" title="enter your first name if any.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                
+                                <div class="col-xs-6">
+                                  <label for="last_name"><h4>Address</h4></label>
+                                    <input type="text" class="form-control" name="last_name" id="last_name" placeholder="heerassagala, Kandy" title="enter your last name if any.">
+                                </div>
+                            </div>
+                
+                            <div class="form-group">
+                                
+                                <div class="col-xs-6">
+                                    <label for="phone"><h4>Contact Number</h4></label>
+                                    <input type="text" class="form-control" name="phone" id="phone" placeholder="071 2562583" title="enter your phone number if any.">
+                                </div>
+                            </div>
+                
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                   <label for="mobile"><h4>Fax Number</h4></label>
+                                    <input type="text" class="form-control" name="mobile" id="mobile" placeholder="091 3908599" title="enter your mobile number if any.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                
+                                <div class="col-xs-6">
+                                    <label for="email"><h4>Email</h4></label>
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                
+                                <div class="col-xs-6">
+                                    <label for="email"><h4> Located District</h4></label>
+                                    <input type="email" class="form-control" id="location" placeholder="Kandy" title="enter a location">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                
+                                <div class="col-xs-6">
+                                    <label for="password"><h4> Web Site Link</h4></label>
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="www. amaya resort" title="enter your password.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                
+                                <div class="col-xs-6">
+                                  <label for="password2"><h4>Facebook Link</h4></label>
+                                    <input type="password" class="form-control" name="password2" id="password2" placeholder="facebook.com/ amaya resort" title="enter your password2.">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                
+                                <div class="col-xs-6">
+                                    <label for="password"><h4> Packages And details</h4></label>
+                                    <textarea type="password" class="form-control" name="password" style="height: 300px;" placeholder=" describe your package details"></textarea>
+                                </div>
+
+                            </div>
+
+<br>
+<br>
+
+                          <div class="row" style="margin-top: 50px;">
+
+                            <br>
+                            <br>
+<!--                             
+                            <div class="col-lg-4 col-md-4 col-sm-6">                                
+                                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="one avatar img-box img-thumbnail" alt="avatar">
+                                <h6>Upload  First Photo.</h6>
+                                <input type="file" class="text-center center-block file-upload">
+                              </div>
+
+                              <div class="col-lg-4 col-md-4 col-sm-6">
+                                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="two img-box img-thumbnail" alt="avatar">
+                                <h6>Upload Second Photo</h6>
+                                <input type="file" name="second " class="text-center center-block file-upload">
+                              </div>
+
+                              <div class="col-lg-4 col-md-4 col-sm-6">
+                                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="three img-box img-thumbnail" alt="avatar">
+                                <h6>Upload Third Photo </h6>
+                                <input type="file" class="text-center center-block file-upload">
+                              </div>
+
+                              <div class="col-lg-4 col-md-4 col-sm-6">
+                                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="four img-box img-thumbnail" alt="avatar">
+                                <h6>Upload a Fourth Photo</h6>
+                                <input type="file" class="text-center center-block file-upload">
+                              </div>
+                              <div class="col-lg-4 col-md-4 col-sm-6">
+                                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="five img-box img-thumbnail" alt="avatar">
+                                <h6>Upload Fofoth Photo</h6>
+                                <input type="file" class="text-center center-block file-upload">
+                              </div> -->
+
+
+                              
+
+
+
+                              
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <img id="blah" src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png"  class="Two img-box img-thumbnail" alt="your image" />
+
+                                <input type='file' onchange="readURL(this);" />
+                            </div>
+                           
+                            
+
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <img id="One" src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png"  class="Two img-box img-thumbnail" alt="your image" />
+
+                                <input type='file' onchange="OnereadURL(this);" />
+                            </div>
+                           
+                            
+
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <img id="Two" src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png"  class="Two img-box img-thumbnail" alt="your image" />
+
+                                <input type='file' onchange="TworeadURL(this);" />
+                            </div>
+                           
+                           
+
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <img id="Three" src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png"  class="Two img-box img-thumbnail" alt="your image" />
+
+                                <input type='file' onchange="ThreereadURL(this);" />
+                            </div>
+                           
+                            
+
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <img id="Four" src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png"  class="Two img-box img-thumbnail" alt="your image" />
+
+                                <input type='file' onchange="FourreadURL(this);" />
+                            </div>
+                           
+                            
+
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <img id="Five" src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png"  class="Two img-box img-thumbnail" alt="your image" />
+
+                                <input type='file' onchange="FivereadURL(this);" />
+                            </div>
+                           
+
+                           
+                           
+                            </div>
+                           
+
+                           
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="form-group">
+                                 <div class="col-xs-12">
+                                      <br>
+                                        <button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                         <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                                  </div>
+                            </div>
+                        </form>
+                    
+                    <hr>
+                    
+                   </div><!--/tab-pane-->
+                   <!-- <div class="tab-pane" id="messages">
+                     
+                     <h2></h2>
+                     
+                     <hr>
+                        <form class="form" action="##" method="post" id="registrationForm">
+                            <div class="form-group">
+                                
+                                <div class="col-xs-6">
+                                    <label for="first_name"><h4>First name</h4></label>
+                                    <input type="text" class="form-control" name="first_name" id="first_name" placeholder="first name" title="enter your first name if any.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                
+                                <div class="col-xs-6">
+                                  <label for="last_name"><h4>Last name</h4></label>
+                                    <input type="text" class="form-control" name="last_name" id="last_name" placeholder="last name" title="enter your last name if any.">
+                                </div>
+                            </div>
+                
+                            <div class="form-group">
+                                
+                                <div class="col-xs-6">
+                                    <label for="phone"><h4>Phone</h4></label>
+                                    <input type="text" class="form-control" name="phone" id="phone" placeholder="enter phone" title="enter your phone number if any.">
+                                </div>
+                            </div>
+                
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                   <label for="mobile"><h4>Mobile</h4></label>
+                                    <input type="text" class="form-control" name="mobile" id="mobile" placeholder="enter mobile number" title="enter your mobile number if any.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                
+                                <div class="col-xs-6">
+                                    <label for="email"><h4>Email</h4></label>
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                
+                                <div class="col-xs-6">
+                                    <label for="email"><h4>Location</h4></label>
+                                    <input type="email" class="form-control" id="location" placeholder="somewhere" title="enter a location">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                
+                                <div class="col-xs-6">
+                                    <label for="password"><h4>Web Site Link</h4></label>
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="password" title="enter your password.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                
+                                <div class="col-xs-6">
+                                  <label for="password2"><h4>Facebook Link</h4></label>
+                                    <input type="password" class="form-control" name="password2" id="password2" placeholder="password2" title="enter your password2.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                 <div class="col-xs-12">
+                                      <br>
+                                        <button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                         <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                                  </div>
+                            </div>
+                        </form>
+                     
+                   </div> -->
+                   <!--/tab-pane-->
+                  
+                    </div><!--/tab-pane-->
+                </div><!--/tab-content-->
+      
+              </div><!--/col-9-->
+          </div><!--/row-->
+
+
+
+<script type="text/javascript" >
+          
+
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+
+                if($('#blah')){
+                    
+                $('#blah')
+                    .attr('src', e.target.result)
+                    ;
+
+                }
+
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function OnereadURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+
+                if($('#One')){
+                    
+                $('#One')
+                    .attr('src', e.target.result)
+                    ;
+
+                }
+
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    function TworeadURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+
+                if($('#Two')){
+                    
+                $('#Two')
+                    .attr('src', e.target.result)
+                    ;
+
+                }
+
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function ThreereadURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+
+                if($('#Three')){
+                    
+                $('#Three')
+                    .attr('src', e.target.result)
+                    ;
+
+                }
+
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+    function FourreadURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+
+                if($('#Four')){
+                    
+                $('#Four')
+                    .attr('src', e.target.result)
+                    ;
+
+                }
+
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function FivereadURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+
+                if($('#Five')){
+                    
+                $('#Five')
+                    .attr('src', e.target.result)
+                    ;
+
+                }
+
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          $(document).ready(function() {
+      
+          
+      var readURL = function(input) {
+          if (input.files && input.files[0]) {
+              var reader = new FileReader();
+      
+              reader.onload = function (e) {
+                  $('.avatar').attr('src', e.target.result);
+               
+              }
+      
+              reader.readAsDataURL(input.files[0]);
+          }
+      }
+      
+      
+      $(".file-upload").on('change', function(){
+          readURL(this);
+      });
+      });
+          </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+    <!-- About End -->
+
+    <!-- History Section Begin -->
+    
+    <!-- History Section End -->
+
+    <!-- Choose Section Begin -->
+    
+    <!-- Choose Section End -->
+
+    <!-- Call Section Begin -->
+    
+    <!-- Call Section End -->
+
+    <!-- Team Section Begin -->
+    
+    <!-- Team Section End -->
+
+    <!-- Contact Begin -->
+    
+    <!-- Contact End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="./index.html"><img src="img/uthsawaLk.png" alt=""></a>
+                        </div>
+                        <p>හමුවීමකින් තොරව මුදල් ගෙවීමකින් සිදුවන වංචා පිලිබද අප ආයතනය වගකීමක් නොදරණ බව  ඉතා කාරුණිකව සිහිතබා ගන්න</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>Services</h5>
+                        <div class="footer__widget">
+                            <ul>
+                                <li><a href="#">Wedding Holes & Resturents</a></li>
+                                <li><a href="#">Bridle & Dressing</a></li>
+                                <li><a href="#">Photography & Vediography</a></li>
+                                <li><a href="#">Catering & Functional Items</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>Services</h5>
+                        <div class="footer__widget footer__widget--social">
+                            <!-- <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i> Skype</a></li>
+                            </ul> -->
+                            <ul>
+                                <li><a href="#">Entertainment</a></li>
+                                <li><a href="#">Event Planners</a></li>
+                                <li><a href="#">Wedding Cars</a></li>
+                                <li><a href="#">Cakes</a></li>
+                            </ul>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                    <div class="footer__widget footer__widget--address">
+                        <h5>Services</h5>
+                        <!-- <p>We work all days a week, Please contact us for any inquiry.</p> -->
+                        <ul>
+                            <li>Jewellery</li>
+                            <li>Invitation Cards</li>
+                            <li>Floral Works</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <ul class="footer__copyright__links">
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Community</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <div class="footer__copyright__text">
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | The Uthsawa . Lk  Made by <i class="fa fa-heart" aria-hidden="true"></i> by <a href="#" target="_blank">Jay  </a></p>
+                        </div>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

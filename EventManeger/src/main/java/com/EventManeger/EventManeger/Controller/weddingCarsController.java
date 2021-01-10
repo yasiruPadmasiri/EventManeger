@@ -13,4 +13,8 @@ public class weddingCarsController {
     public String weddingCar_Search(){
         return "weddingcarSearch";
     }
+    @RequestMapping(value = "/weddingCar_add_publish")
+    public String weddingCar_add_publish(){
+        return "weddingCar_add_publish ";
+    }
 }

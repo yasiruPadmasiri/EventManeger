@@ -14,4 +14,8 @@ public class funtionItemsController {
     public String funtionItem_Search(){
         return "functionItemsSearch";
     }
+    @RequestMapping(value = "/functionItem_add_publish")
+    public String functionItem_add_publish(){
+        return "functionItems_add_publish";
+    }
 }

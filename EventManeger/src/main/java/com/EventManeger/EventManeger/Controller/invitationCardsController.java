@@ -13,4 +13,8 @@ public class invitationCardsController {
     public String cards_Search(){
         return "invitationCardSearch";
     }
+    @RequestMapping(value = "/cards_add_publish")
+    public String cards_add_publish(){
+        return "invitationCards_add_publish";
+    }
 }

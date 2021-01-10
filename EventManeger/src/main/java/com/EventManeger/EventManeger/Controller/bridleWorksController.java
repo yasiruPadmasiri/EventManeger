@@ -14,4 +14,9 @@ public class bridleWorksController {
     public String bridleSearch(){
         return "bridleSearch";
     }
+
+    @RequestMapping(value = "bridle_add_publish")
+    public  String bridle_add_publish(){
+        return "bridle_add_publish";
+    }
 }

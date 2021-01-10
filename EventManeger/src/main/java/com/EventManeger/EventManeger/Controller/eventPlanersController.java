@@ -14,4 +14,8 @@ public class eventPlanersController {
     public String eventPlanners_Search(){
         return "eventPlannersSearch";
     }
+    @RequestMapping(value = "eventPlanners_add_publish")
+    public String eventPlanners_add_publish(){
+        return "eventPlanner_add_publish";
+    }
 }

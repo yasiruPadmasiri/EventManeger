@@ -15,4 +15,9 @@ public class cakesController {
     public String cakeSearch(){
         return "cakeSearch";
     }
+
+    @RequestMapping(value = "cakes_add_publish")
+    public String cakes_add_publish(){
+        return "cake_add_publish";
+    }
 }
